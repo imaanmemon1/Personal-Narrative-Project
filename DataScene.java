@@ -124,17 +124,19 @@ public class DataScene extends Scene {
     drawText("Rating: " + rating + "/10", 10, 360); 
   }
 
+ 
   /*
-   * Sets background color based on the rating.
-   */
-  private void setBackgroundColor(int index) {
-    int rating = ratings[0][index];
-    if (rating >= 8) {
-      clear("green");
-    } else if (rating >= 5) {
-      clear("yellow");
+ * Sets background color based on the average time spent.
+ */
+private void setBackgroundColor(int index) {
+    int timeSpent = Integer.parseInt(locations[2][index]);  
+    if (timeSpent >= 6) {
+        clear("green");  
+    } else if (timeSpent >= 4) {
+        clear("yellow"); 
     } else {
-      clear("red");
+        clear("red"); 
     }
-  }
+}
+
 }
