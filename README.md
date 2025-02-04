@@ -20,7 +20,8 @@ Use your knowledge of object-oriented programming, two-dimensional (2D) arrays, 
 ![Copy of Unit 5 - UML Diagram](https://github.com/user-attachments/assets/5b8d3dba-e773-4185-86fb-d4b9cd7fce23)
 
 ## Video
-[![Thumbnail for my projet](<img width="294" alt="Screenshot 2025-02-03 at 7 55 12 PM" src="https://github.com/user-attachments/assets/f63838ae-cc74-46b1-9d9b-725bf077f967" />)](https://youtu.be/AvdmkeO6asg)
+
+[![Thumbnail for my projet](thumbnaill.png)](https://youtu.be/AvdmkeO6asg)
 
 ## Story Description
 
