@@ -20,17 +20,18 @@ Use your knowledge of object-oriented programming, two-dimensional (2D) arrays, 
 ![Copy of Unit 5 - UML Diagram](https://github.com/user-attachments/assets/5b8d3dba-e773-4185-86fb-d4b9cd7fce23)
 
 ## Video
-
-https://github.com/user-attachments/assets/7c976817-b9e5-41b0-9af9-a492464227ff
-
+[![Thumbnail for my projet](<img width="294" alt="Screenshot 2025-02-03 at 7 55 12 PM" src="https://github.com/user-attachments/assets/f63838ae-cc74-46b1-9d9b-725bf077f967" />)](https://youtu.be/AvdmkeO6asg)
 
 ## Story Description
 
-This animation tells the story of my travels, particularly focusing on my experiences in Dubai. The animation starts by showcasing different locations that I visited in Dubai, such as the Burj Khalifa, Atlantis The Palm, Desert Safari, and Global Village. Each location is displayed with relevant image filters applied, which help convey the mood and significance of each place. For instance, the Burj Khalifa is depicted with a custom filter to emphasize its towering and impressive nature. The Atlantis The Palm is shown with a motion blur effect to evoke a sense of excitement and movement. The Desert Safari is mirrored vertically to create the illusion of a desert landscape with the car, and the Global Village is given a threshold filter to add contrast and highlight the vibrant diversity of the place. These images are paired with text labels showing the names of the locations, and the animation also incorporates sound to enhance the atmosphere.
-
-To organize this data, two 2D arrays are used in the program. The first array stores the names of the places visited, and the second array stores instances of DestinationImage objects, which represent the images associated with each place. These arrays are used to loop through the images and apply specific filters, ensuring that each location is displayed with its appropriate effect. This structure helps relate the images and their corresponding filters to the story of my travels, guiding the user through each location in a dynamic, visually engaging way.
+This project tells the story of my trip to Dubai. It shows places like Burj Khalifa, Palm Jumeirah, and Dubai Mall, along with how much time I spent at each place and how I rated them. The scenes include:
+- Images of each location
+- Text with details about each place
+- Background colors that change based on the ratings: Green for good ratings, Red for lower ratings.
+The data for the project (place names, times, and ratings) is stored in 2D arrays and used to create the animation.
 
 ## Image Filter Analysis
 
-In this project, I used several filters, both pre built and custom, to modify the appearance of the images and enhance the narrative. Two of the key filters I used are the motion blur filter and the threshold filter. The motion blur filter is applied to the image of Atlantis The Palm. This filter simulates movement by averaging the color values of adjacent pixels horizontally. This creates a blur effect that gives the impression of motion, which was important for conveying the excitement of being at Atlantis, especially since it is a popular vacation destination. The motion blur filter essentially smooths out the transitions between pixels, making it look like the image is in motion, which adds an energetic and dynamic element to the scene.
-The threshold filter, on the other hand, is applied to the image of Global Village. This filter works by adjusting the brightness of each pixel: if the brightness is below a set threshold, the pixel turns black, and if it’s above the threshold, the pixel turns white. This effect creates a high contrast black and white image, which helps highlight the vivid lights and contrasts in the Global Village, making it appear more dramatic and vibrant. The threshold filter emphasizes the cultural diversity of Global Village by using stark contrasts to represent the bright lights and dynamic atmosphere of the place. 
+The Invert filter changes the colors in the image to the opposite. Dark becomes light and light becomes dark. It makes the image look dramatic. Each pixel’s color is changed by subtracting it from 255 to invert the color.
+
+The Pixelation filter makes the image look blocky by turning small areas into big color blocks. The image is divided into blocks, and the average color of each block is used to color all the pixels in that block.
