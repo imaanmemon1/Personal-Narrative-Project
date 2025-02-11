@@ -85,13 +85,27 @@ public class DataScene extends Scene {
    * Draw any location scene.
    */
   private void drawLocationScene(int index, String imageFile, String locationName) {
-    setTextHeight(30);
+    setTextHeight(22);
     setBackgroundColor(index);
+
+  /*
+   * Extract file extension using string
+   */
+    String fileExtension = imageFile.substring(imageFile.lastIndexOf(".") + 1);
+    drawText("File Type: " + fileExtension.toUpperCase(), 10, 330);
+
     CustomImage img = new CustomImage(imageFile);
     drawImage(img, 50, 0, 300);
-    drawText(locationName, 10, 390);
+
+  /*
+   * Format the location name with string
+   */
+
+    String formattedLocationName = "Location: " + locationName.toUpperCase();
+    drawText(formattedLocationName, 10, 390);
+    
     drawAverageTimeSpent(index);  
-    drawRating(index);  // Draw the rating
+    drawRating(index); 
     pause(1);
 
     /*
@@ -113,7 +127,8 @@ public class DataScene extends Scene {
    * New method to draw the average time spent at the place.
    */  
   private void drawAverageTimeSpent(int index) {
-    drawText("Average Time Spent: " + locations[2][index] + " hours", 10, 330);  
+    String timeSpentText = String.format("Average Time Spent: %s hours", locations[2][index]);
+    drawText(timeSpentText, 10, 350);  
   }
 
   /*
@@ -121,14 +136,14 @@ public class DataScene extends Scene {
    */
   private void drawRating(int index) {
     int rating = ratings[0][index];  
-    drawText("Rating: " + rating + "/10", 10, 360); 
+    String ratingText = String.format("Rating: %d/10", rating);
+    drawText(ratingText, 10, 370); 
   }
 
- 
   /*
- * Sets background color based on the average time spent.
- */
-private void setBackgroundColor(int index) {
+   * Sets background color based on the average time spent.
+   */
+  private void setBackgroundColor(int index) {
     int timeSpent = Integer.parseInt(locations[2][index]);  
     if (timeSpent >= 6) {
         clear("green");  
@@ -137,6 +152,5 @@ private void setBackgroundColor(int index) {
     } else {
         clear("red"); 
     }
-}
-
+  }
 }
