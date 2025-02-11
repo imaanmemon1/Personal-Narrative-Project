@@ -124,7 +124,7 @@ public class DataScene extends Scene {
   }
 
   /*
-   * New method to draw the average time spent at the place.
+   * Draw the average time spent at the place using the string format
    */  
   private void drawAverageTimeSpent(int index) {
     String timeSpentText = String.format("Average Time Spent: %s hours", locations[2][index]);
@@ -132,7 +132,7 @@ public class DataScene extends Scene {
   }
 
   /*
-   * New method to draw the rating of the place.
+   * Draw the rating of the place using the string format
    */
   private void drawRating(int index) {
     int rating = ratings[0][index];  
